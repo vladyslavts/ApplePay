@@ -52,11 +52,11 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="15"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="buy:" destination="gTV-IL-0wX" eventType="touchUpInside" id="veq-Vq-zzU"/>
+                                            <action selector="add:" destination="gTV-IL-0wX" eventType="touchUpInside" id="veq-Vq-zzU"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -99,6 +99,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="215" height="284"/>
             <connections>
+                <outlet property="addButton" destination="Syv-Gy-JfN" id="27p-3P-LBW"/>
                 <outlet property="price" destination="Jgs-sI-tDh" id="9gO-qj-tW4"/>
                 <outlet property="productImageView" destination="Wu1-az-63C" id="FmT-kp-X58"/>
                 <outlet property="productTitle" destination="W8Q-WW-AKP" id="eJF-dF-1Kw"/>

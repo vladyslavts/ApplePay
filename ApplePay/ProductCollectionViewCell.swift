@@ -13,13 +13,15 @@ class ProductCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var productTitle: UILabel!
     @IBOutlet weak var price: UILabel!
-    var onBuy: (() -> ())?
+    @IBOutlet weak var addButton: ConfigurableButton!
+    
+    var onAdd: (() -> ())?
     
     var product: Product! {
         didSet {
             productImageView.image = UIImage(named: product.imageName)
             productTitle.text = product.title
-            price.text = "$" + product.price
+            price.text = "$" + "\(product.price)"
         }
     }
     
@@ -28,7 +30,8 @@ class ProductCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    @IBAction func buy(_ sender: ConfigurableButton) {
+    @IBAction func add(_ sender: ConfigurableButton) {
+        onAdd?()
     }
     
 }

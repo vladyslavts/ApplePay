@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F532B3BC23F1916600791866 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F532B3BB23F1916600791866 /* UITableView+Extension.swift */; };
 		F5EDABE323F14DD9005F15D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDABE223F14DD9005F15D7 /* AppDelegate.swift */; };
 		F5EDABE523F14DD9005F15D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDABE423F14DD9005F15D7 /* SceneDelegate.swift */; };
 		F5EDABE723F14DD9005F15D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDABE623F14DD9005F15D7 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F532B3BB23F1916600791866 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		F5EDABDF23F14DD9005F15D7 /* ApplePay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplePay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EDABE223F14DD9005F15D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5EDABE423F14DD9005F15D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				F5EDABF823F152FE005F15D7 /* ConfigurableButton.swift */,
 				F5EDAC0023F15B57005F15D7 /* ClassName.swift */,
 				F5EDABFE23F15949005F15D7 /* UICollectionView+Extension.swift */,
+				F532B3BB23F1916600791866 /* UITableView+Extension.swift */,
 				F5EDABFA23F1554A005F15D7 /* ProductCollectionViewCell.swift */,
 				F5EDABFB23F1554A005F15D7 /* ProductCollectionViewCell.xib */,
 				F5EDABE823F14DD9005F15D7 /* Main.storyboard */,
@@ -169,6 +172,7 @@
 				F5EDABE323F14DD9005F15D7 /* AppDelegate.swift in Sources */,
 				F5EDABFC23F1554A005F15D7 /* ProductCollectionViewCell.swift in Sources */,
 				F5EDABE523F14DD9005F15D7 /* SceneDelegate.swift in Sources */,
+				F532B3BC23F1916600791866 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,13 @@
 
 import UIKit
 
-struct Product {
+struct Product: Equatable {
     var imageName: String
     var title: String
-    var price: String
+    var price: Int
+    
+    static func ==(lhs: Product, rhs: Product) -> Bool {
+        return lhs.imageName == rhs.imageName && lhs.title == rhs.title && lhs.price == rhs.price
+    }
+    
 }

@@ -12,17 +12,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ApplePay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vB2-Wz-Fd7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="756"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="safeArea" id="NfU-28-TVu">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="100"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                                 <connections>
@@ -30,11 +30,91 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Cuu-PF-XAn"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4DL-po-Muo" customClass="ConfigurableView" customModule="ApplePay" customModuleProvider="target">
+                                <rect key="frame" x="16" y="708" width="382" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-d3-aXG">
+                                        <rect key="frame" x="8" y="0.0" width="366" height="60"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uvA-h9-ngs">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktS-gM-DYI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLg-gH-8an">
+                                                <rect key="frame" x="116" y="0.0" width="250" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XE-0u-yGT" customClass="ConfigurableButton" customModule="ApplePay" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="8" width="250" height="44"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="5Vk-BA-78C"/>
+                                                        </constraints>
+                                                        <state key="normal" image="ic_applePay">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="buy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4I-eg-7aE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="2Ji-L6-dhr"/>
+                                                    <constraint firstItem="4XE-0u-yGT" firstAttribute="leading" secondItem="zLg-gH-8an" secondAttribute="leading" id="5zf-HI-QYa"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4XE-0u-yGT" secondAttribute="trailing" id="Js0-r6-8T6"/>
+                                                    <constraint firstItem="4XE-0u-yGT" firstAttribute="centerX" secondItem="zLg-gH-8an" secondAttribute="centerX" id="Xl3-0d-pn9"/>
+                                                    <constraint firstItem="4XE-0u-yGT" firstAttribute="centerY" secondItem="zLg-gH-8an" secondAttribute="centerY" id="oet-RV-wCM"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9LR-R4-H2j"/>
+                                    <constraint firstAttribute="trailing" secondItem="dCw-d3-aXG" secondAttribute="trailing" constant="8" id="Ov8-NS-l8g"/>
+                                    <constraint firstItem="dCw-d3-aXG" firstAttribute="leading" secondItem="4DL-po-Muo" secondAttribute="leading" constant="8" id="OwA-FR-emF"/>
+                                    <constraint firstAttribute="bottom" secondItem="dCw-d3-aXG" secondAttribute="bottom" id="Wxh-fY-U8U"/>
+                                    <constraint firstItem="dCw-d3-aXG" firstAttribute="top" secondItem="4DL-po-Muo" secondAttribute="top" id="byH-gm-fKV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4DL-po-Muo" secondAttribute="top" constant="100" id="8sj-yX-Fjc"/>
                             <constraint firstItem="vB2-Wz-Fd7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BOA-hj-dSY"/>
                             <constraint firstAttribute="bottom" secondItem="vB2-Wz-Fd7" secondAttribute="bottom" id="CxH-9L-ZbQ"/>
+                            <constraint firstItem="4DL-po-Muo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eAM-x5-6Sh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4DL-po-Muo" secondAttribute="trailing" constant="16" id="iYP-Ak-8Dw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vB2-Wz-Fd7" secondAttribute="trailing" id="k74-ds-xBw"/>
                             <constraint firstItem="vB2-Wz-Fd7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oQ6-J6-O8j"/>
                         </constraints>
@@ -42,7 +122,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Products" id="myW-3p-sT9"/>
                     <connections>
+                        <outlet property="basketViewTop" destination="8sj-yX-Fjc" id="Fse-Ec-dL9"/>
                         <outlet property="collectionView" destination="vB2-Wz-Fd7" id="CfQ-3c-mhs"/>
+                        <outlet property="totalPrice" destination="ktS-gM-DYI" id="B08-Dt-6V5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,4 +157,7 @@
             <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_applePay" width="424" height="76"/>
+    </resources>
 </document>
