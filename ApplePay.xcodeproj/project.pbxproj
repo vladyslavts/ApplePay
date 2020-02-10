@@ -13,6 +13,13 @@
 		F5EDABEA23F14DD9005F15D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EDABE823F14DD9005F15D7 /* Main.storyboard */; };
 		F5EDABEC23F14DDC005F15D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EDABEB23F14DDC005F15D7 /* Assets.xcassets */; };
 		F5EDABEF23F14DDC005F15D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EDABED23F14DDC005F15D7 /* LaunchScreen.storyboard */; };
+		F5EDABF723F152F5005F15D7 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDABF623F152F5005F15D7 /* ConfigurableView.swift */; };
+		F5EDABF923F152FE005F15D7 /* ConfigurableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDABF823F152FE005F15D7 /* ConfigurableButton.swift */; };
+		F5EDABFC23F1554A005F15D7 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDABFA23F1554A005F15D7 /* ProductCollectionViewCell.swift */; };
+		F5EDABFD23F1554A005F15D7 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5EDABFB23F1554A005F15D7 /* ProductCollectionViewCell.xib */; };
+		F5EDABFF23F15949005F15D7 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDABFE23F15949005F15D7 /* UICollectionView+Extension.swift */; };
+		F5EDAC0123F15B57005F15D7 /* ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDAC0023F15B57005F15D7 /* ClassName.swift */; };
+		F5EDAC0323F166A7005F15D7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDAC0223F166A7005F15D7 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		F5EDABEB23F14DDC005F15D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5EDABEE23F14DDC005F15D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5EDABF023F14DDC005F15D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EDABF623F152F5005F15D7 /* ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
+		F5EDABF823F152FE005F15D7 /* ConfigurableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableButton.swift; sourceTree = "<group>"; };
+		F5EDABFA23F1554A005F15D7 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		F5EDABFB23F1554A005F15D7 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		F5EDABFE23F15949005F15D7 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		F5EDAC0023F15B57005F15D7 /* ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassName.swift; sourceTree = "<group>"; };
+		F5EDAC0223F166A7005F15D7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +73,13 @@
 				F5EDABE223F14DD9005F15D7 /* AppDelegate.swift */,
 				F5EDABE423F14DD9005F15D7 /* SceneDelegate.swift */,
 				F5EDABE623F14DD9005F15D7 /* ViewController.swift */,
+				F5EDAC0223F166A7005F15D7 /* Product.swift */,
+				F5EDABF623F152F5005F15D7 /* ConfigurableView.swift */,
+				F5EDABF823F152FE005F15D7 /* ConfigurableButton.swift */,
+				F5EDAC0023F15B57005F15D7 /* ClassName.swift */,
+				F5EDABFE23F15949005F15D7 /* UICollectionView+Extension.swift */,
+				F5EDABFA23F1554A005F15D7 /* ProductCollectionViewCell.swift */,
+				F5EDABFB23F1554A005F15D7 /* ProductCollectionViewCell.xib */,
 				F5EDABE823F14DD9005F15D7 /* Main.storyboard */,
 				F5EDABEB23F14DDC005F15D7 /* Assets.xcassets */,
 				F5EDABED23F14DDC005F15D7 /* LaunchScreen.storyboard */,
@@ -127,6 +148,7 @@
 			files = (
 				F5EDABEF23F14DDC005F15D7 /* LaunchScreen.storyboard in Resources */,
 				F5EDABEC23F14DDC005F15D7 /* Assets.xcassets in Resources */,
+				F5EDABFD23F1554A005F15D7 /* ProductCollectionViewCell.xib in Resources */,
 				F5EDABEA23F14DD9005F15D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +161,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5EDABE723F14DD9005F15D7 /* ViewController.swift in Sources */,
+				F5EDAC0123F15B57005F15D7 /* ClassName.swift in Sources */,
+				F5EDAC0323F166A7005F15D7 /* Product.swift in Sources */,
+				F5EDABFF23F15949005F15D7 /* UICollectionView+Extension.swift in Sources */,
+				F5EDABF923F152FE005F15D7 /* ConfigurableButton.swift in Sources */,
+				F5EDABF723F152F5005F15D7 /* ConfigurableView.swift in Sources */,
 				F5EDABE323F14DD9005F15D7 /* AppDelegate.swift in Sources */,
+				F5EDABFC23F1554A005F15D7 /* ProductCollectionViewCell.swift in Sources */,
 				F5EDABE523F14DD9005F15D7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
