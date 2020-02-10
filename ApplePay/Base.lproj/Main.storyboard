@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ygp-ya-XEb">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ApplePay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vB2-Wz-Fd7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="safeArea" id="NfU-28-TVu">
                                     <size key="itemSize" width="50" height="50"/>
@@ -31,32 +31,33 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4DL-po-Muo" customClass="ConfigurableView" customModule="ApplePay" customModuleProvider="target">
-                                <rect key="frame" x="16" y="708" width="382" height="60"/>
+                                <rect key="frame" x="16" y="624" width="343" height="60"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dCw-d3-aXG">
-                                        <rect key="frame" x="8" y="0.0" width="366" height="60"/>
+                                        <rect key="frame" x="8" y="0.0" width="327" height="60"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uvA-h9-ngs">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="161" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktS-gM-DYI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="161" height="60"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLg-gH-8an">
-                                                <rect key="frame" x="116" y="0.0" width="250" height="60"/>
+                                                <rect key="frame" x="177" y="0.0" width="150" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XE-0u-yGT" customClass="ConfigurableButton" customModule="ApplePay" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="8" width="250" height="44"/>
+                                                        <rect key="frame" x="0.0" y="8" width="150" height="44"/>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="44" id="5Vk-BA-78C"/>
                                                         </constraints>
-                                                        <state key="normal" image="ic_applePay">
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="PAY" image="ic_applePay">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -69,9 +70,9 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="250" id="2Ji-L6-dhr"/>
+                                                    <constraint firstAttribute="width" constant="150" id="2Ji-L6-dhr"/>
                                                     <constraint firstItem="4XE-0u-yGT" firstAttribute="leading" secondItem="zLg-gH-8an" secondAttribute="leading" id="5zf-HI-QYa"/>
                                                     <constraint firstAttribute="trailing" secondItem="4XE-0u-yGT" secondAttribute="trailing" id="Js0-r6-8T6"/>
                                                     <constraint firstItem="4XE-0u-yGT" firstAttribute="centerX" secondItem="zLg-gH-8an" secondAttribute="centerX" id="Xl3-0d-pn9"/>
@@ -79,6 +80,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -137,7 +139,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ygp-ya-XEb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="bRL-4U-trh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
@@ -158,6 +160,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_applePay" width="424" height="76"/>
+        <image name="ic_applePay" width="249" height="76"/>
     </resources>
 </document>

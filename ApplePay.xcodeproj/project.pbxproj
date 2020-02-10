@@ -53,6 +53,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F532B3BD23F19EC000791866 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5EDAC0223F166A7005F15D7 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F532B3BE23F19ED600791866 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5EDAC0023F15B57005F15D7 /* ClassName.swift */,
+				F5EDABFE23F15949005F15D7 /* UICollectionView+Extension.swift */,
+				F532B3BB23F1916600791866 /* UITableView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F532B3BF23F19EE300791866 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				F5EDABF623F152F5005F15D7 /* ConfigurableView.swift */,
+				F5EDABF823F152FE005F15D7 /* ConfigurableButton.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		F532B3C023F19EEE00791866 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5EDABFA23F1554A005F15D7 /* ProductCollectionViewCell.swift */,
+				F5EDABFB23F1554A005F15D7 /* ProductCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F5EDABD623F14DD9005F15D7 = {
 			isa = PBXGroup;
 			children = (
@@ -75,14 +111,10 @@
 				F5EDABE223F14DD9005F15D7 /* AppDelegate.swift */,
 				F5EDABE423F14DD9005F15D7 /* SceneDelegate.swift */,
 				F5EDABE623F14DD9005F15D7 /* ViewController.swift */,
-				F5EDAC0223F166A7005F15D7 /* Product.swift */,
-				F5EDABF623F152F5005F15D7 /* ConfigurableView.swift */,
-				F5EDABF823F152FE005F15D7 /* ConfigurableButton.swift */,
-				F5EDAC0023F15B57005F15D7 /* ClassName.swift */,
-				F5EDABFE23F15949005F15D7 /* UICollectionView+Extension.swift */,
-				F532B3BB23F1916600791866 /* UITableView+Extension.swift */,
-				F5EDABFA23F1554A005F15D7 /* ProductCollectionViewCell.swift */,
-				F5EDABFB23F1554A005F15D7 /* ProductCollectionViewCell.xib */,
+				F532B3BD23F19EC000791866 /* Model */,
+				F532B3BF23F19EE300791866 /* Controls */,
+				F532B3BE23F19ED600791866 /* Extensions */,
+				F532B3C023F19EEE00791866 /* View */,
 				F5EDABE823F14DD9005F15D7 /* Main.storyboard */,
 				F5EDABEB23F14DDC005F15D7 /* Assets.xcassets */,
 				F5EDABED23F14DDC005F15D7 /* LaunchScreen.storyboard */,
