@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ygp-ya-XEb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aUq-NS-dmg">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -113,16 +113,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="4DL-po-Muo" secondAttribute="top" constant="100" id="8sj-yX-Fjc"/>
+                            <constraint firstItem="vB2-Wz-Fd7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BN9-5b-dby"/>
                             <constraint firstItem="vB2-Wz-Fd7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BOA-hj-dSY"/>
                             <constraint firstAttribute="bottom" secondItem="vB2-Wz-Fd7" secondAttribute="bottom" id="CxH-9L-ZbQ"/>
                             <constraint firstItem="4DL-po-Muo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eAM-x5-6Sh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4DL-po-Muo" secondAttribute="trailing" constant="16" id="iYP-Ak-8Dw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vB2-Wz-Fd7" secondAttribute="trailing" id="k74-ds-xBw"/>
-                            <constraint firstItem="vB2-Wz-Fd7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oQ6-J6-O8j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Products" id="myW-3p-sT9"/>
+                    <navigationItem key="navigationItem" title="Products" largeTitleDisplayMode="always" id="myW-3p-sT9"/>
                     <connections>
                         <outlet property="basketViewTop" destination="8sj-yX-Fjc" id="Fse-Ec-dL9"/>
                         <outlet property="collectionView" destination="vB2-Wz-Fd7" id="CfQ-3c-mhs"/>
@@ -131,32 +131,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050.7246376811595" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1094" y="81"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="tZV-yk-Tm1">
+        <scene sceneID="gWo-g8-9By">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ygp-ya-XEb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aUq-NS-dmg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="bRL-4U-trh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="qOR-mc-0Ib">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qzX-3Q-NIY"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fHS-am-YaM"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fwa-vH-7yf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kav-et-YZC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>
